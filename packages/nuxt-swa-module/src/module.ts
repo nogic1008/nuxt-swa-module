@@ -1,12 +1,17 @@
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import pkg from '../package.json'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule'
+    name: pkg.name,
+    version: pkg.version,
+    compatibility: {
+      nuxt: pkg.devDependencies.nuxt
+    },
+    configKey: 'swa'
   },
   // Default configuration options of the Nuxt module
   defaults: {},
