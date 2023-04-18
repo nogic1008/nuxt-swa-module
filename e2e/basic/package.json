@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "basic",
+  "type": "module",
+  "scripts": {
+    "prepare": "nuxi prepare",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "@nuxt/test-utils": "^3.4.1",
+    "nuxt": "^3.4.1",
+    "nuxt-swa-module": "*",
+    "vitest": "^0.30.1"
+  }
+}
