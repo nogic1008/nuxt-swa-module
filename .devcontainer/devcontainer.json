@@ -1,0 +1,23 @@
+{
+  "name": "Node.js 16 with Azure Functions Core Tools",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:16",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "GraphQL.vscode-graphql-syntax",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-azuretools.vscode-azurestaticwebapps",
+        "Vue.volar"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {
+      "version": "4"
+    }
+  },
+  "remoteUser": "node",
+  "postCreateCommand": "npm ci"
+}
