@@ -1,4 +1,13 @@
 {
   "private": true,
-  "name": "my-module-playground"
+  "name": "nuxt-swa-module-playground",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "prepare": "nuxi prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.4.1",
+    "nuxt-swa-module": "*"
+  }
 }
